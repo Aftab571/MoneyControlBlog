@@ -1,0 +1,86 @@
+.align-center{
+    text-align: center;
+    
+}
+
+.image{
+    background-image: url("strawHat.jpg");
+    width: 100%;
+    opacity: 0.5;
+}
+.logo{
+    color: green;
+    font-style: italic;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+    
+}
+.logoColor{
+    background-color: black;
+    height: 50px;
+}
+
+.italic{
+    font-style: italic
+}
+.pull-right{
+    float: right;
+}
+
+ul.sidenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color:#88868659;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    box-shadow: 10px 1px 11px rgba(0, 0, 0, 0.5) !important;
+  }
+  
+  ul.sidenav li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+   
+  ul.sidenav li a.active {
+    background-color:#88868659;
+    color:black;
+  }
+  
+  ul.sidenav li a:hover:not(.active) {
+    background-color: #88868659;
+    color: white;
+  }
+  
+  div.content {
+    margin-left: 25%;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  @media screen and (max-width: 900px) {
+    ul.sidenav {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    
+    ul.sidenav li a {
+      float: left;
+      padding: 15px;
+    }
+    
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    ul.sidenav li a {
+      text-align: center;
+      float: none;
+    }
+  }

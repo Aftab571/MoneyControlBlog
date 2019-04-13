@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-sm-3">
+            <ul class="sidenav">
+                <li class="logoColor"><span class="align-center logo">
+                        <center>Budget Book</center>
+                    </span></li>
+                <li><a id="activeHome" onclick="showDiv('home')"><span class="glyphicon glyphicon-home"> Home</span></a></li>
+                <li><a id="activeBlog" onclick="showDiv('contact')">Blog</a></li>
+                <li><a id="activeAbout" onclick="showDiv('about')">About</a></li>
+            </ul>
+        </div>
+
+        <div class="col-sm-9">
+            
+            <div id="home">
+                <div class="row">
+                    <div class="col-sm-4">
+                            <img src="money.png">
+                    </div>
+                    <div class="col-sm-8 ">
+                            <a href="https://github.com/Aftab571/App_name" class="btn btn-primary pull-right"><i class="icon-large icon-github">GitHub</i> </a>
+                    </div>
+                </div>
+                    
+                <h1 class="align-center italic">Welcome to the world of Money control</h1>
+
+                <span class="align-center">
+                    Spending money is easy, taking control over it is most of the times a challenge. Budget Book is
+                    designed for the purpose of taking charge of your expenditure.
+
+                </span>
+                <p>It allows the user to do the following:</p>
+                <ul>
+                    <li>Enable the users to maintain a healthy budget</li>
+                    <li>Let the users know their areas of excess spending.
+                    </li>
+                    <li>Let the users decide if their spending’s are worth it.
+                    </li>
+                    <li>Alert the user if their income is spent at a higher rate
+                    </li>
+                </ul>
+            </div>
+            <div id="about">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="card" >
+                            <img class="card-img-top" src="boy.png" alt="Card image">
+                            <div class="card-body">
+                                <h4 class="card-title">Altaf Mohammed Aftab</h4>
+                                <p class="card-text">Developer</p>
+                                <a href="#" class="btn btn-primary">See Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card" >
+                            <img class="card-img-top" src="boy.png" alt="Card image">
+                            <div class="card-body">
+                                <h4 class="card-title">Khaleel ur Rahman</h4>
+                                <p class="card-text">Developer</p>
+                                <a href="#" class="btn btn-primary">See Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card" >
+                            <img class="card-img-top" src="boy.png" alt="Card image">
+                            <div class="card-body">
+                                <h4 class="card-title">Manish</h4>
+                                <p class="card-text">Developer</p>
+                                <a href="#" class="btn btn-primary">See Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card" >
+                            <img class="card-img-top" src="girl.png" alt="Card image">
+                            <div class="card-body">
+                                <h4 class="card-title">Sini</h4>
+                                <p class="card-text">Developer</p>
+                                <a href="#" class="btn btn-primary">See Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
