@@ -3,11 +3,12 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -15,30 +16,48 @@
         <div class="col-sm-3">
             <ul class="sidenav">
                 <li class="logoColor"><span class="align-center logo">
-                        <center>Budget Book</center>
+                        <center><i class="fa fa-book fa-sm" aria-hidden="true"></i> Budget Book</center>
                     </span></li>
-                <li><a id="activeHome" onclick="showDiv('home')"><span class="glyphicon glyphicon-home"> Home</span></a></li>
-                <li><a id="activeBlog" onclick="showDiv('contact')">Blog</a></li>
-                <li><a id="activeAbout" onclick="showDiv('about')">About</a></li>
+                <li><a id="activeHome" onclick="showDiv('home')"><span> <i class="fa fa-home"></i> Home</span></a></li>
+                <li><a id="activeBlog" onclick="showDiv('blog')"><span><i class="fa fa-rss" aria-hidden="true"></i>
+                            Blog</span></a></li>
+                <li><a id="activeAbout" onclick="showDiv('about')"><span><i class="fa fa-users" aria-hidden="true"></i>
+                            About</span></a></li>
             </ul>
         </div>
 
         <div class="col-sm-9">
-            
+
             <div id="home">
                 <div class="row">
                     <div class="col-sm-4">
-                            <img src="money.png">
+                        <img src="./images/money.png">
                     </div>
                     <div class="col-sm-8 ">
-                            <a href="https://github.com/Aftab571/App_name" class="btn btn-primary pull-right"><i class="icon-large icon-github">GitHub</i> </a>
+                        <div>
+                            <a target="_blank" href="https://github.com/DBSE-teaching/isee2019-strawhats/tree/master/app/BudgetBook"
+                                class="btn btn-primary pull-right"><i class="fa fa-github" aria-hidden="true"></i>
+                                GitHub</i>
+                            </a>
+                        </div>
+                        <div>
+                            <a target="_blank" href="https://github.com/DBSE-teaching/isee2019-strawhats/blob/master/APK/budgetBookBeta.apk"
+                                class="btn btn-primary pull-right" style="margin-right:5px;"><i class="fa fa-download"
+                                    aria-hidden="true"></i>
+                                Download APK</i>
+                            </a>
+                        </div>
+
+
+
                     </div>
                 </div>
-                    
+
                 <h1 class="align-center italic">Welcome to the world of Money control</h1>
 
                 <span class="align-center">
-                    Spending money is easy, taking control over it is most of the times a challenge. Budget Book is
+                    Spending money is easier than earning it. Also, taking control over it is most of the times a
+                    challenge. Budget Book is
                     designed for the purpose of taking charge of your expenditure.
 
                 </span>
@@ -53,48 +72,1324 @@
                     </li>
                 </ul>
             </div>
+
+            <div id="blog">
+                <div class="row">
+                    <div class="col-sm-12 bloglogo">
+                        <center>
+                            <h4><b>Budget Book Blog</b></h4>
+                        </center>
+
+                    </div>
+                </div>
+
+
+                <br>
+
+
+                <button type="button" class="btn btn-info collapseSty textAlign" id="coljun04" data-toggle="collapse"
+                    data-target="#apr10"> 10
+                    Apr 2019 -
+                    ISEE : Introduction to Money control <span class="pull-right"><i class="fa fa-plus toggler"
+                            aria-hidden="true"></i></span></button>
+                <br>
+                <div id="apr10" class="collapse">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h1>Budget Book - Blog</h1>
+                            <p>
+                                The Application is designed with a vision of optimizing the expenditure of the user by
+                                keeping a
+                                track of spend habits and suggesting efficient corrective methods. The main aims of the
+                                application
+                                are:
+                            </p>
+                            <ul>
+                                <li>
+                                    Enable the user to input his/her expenditure under various categories of spend.
+                                </li>
+                                <li>
+                                    To analyse the spend habits of the user and generate monthly reports depecting the
+                                    spend trends.
+                                </li>
+                                <li>
+                                    Based on the analysis of the spend trends, help the user to analyse the areas of
+                                    excess
+                                    spending.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <br>
+
+                <button type="button" class="btn btn-info collapseSty textAlign" id="coljun04" data-toggle="collapse"
+                    data-target="#apr16">16
+                    Apr 2019 -
+                    ISEE : Team Forming & Norming <span class="pull-right"><i class="fa fa-plus toggler" aria-hidden="true"></i></span></button>
+                <br>
+                <div id="apr16" class="collapse">
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                           
+                            <br>
+                            <p><b>INTERESTING FACTS AND FIGURES.</b></p>
+                            Before starting any development process, it is very important to carry out extensive Market
+                            research to understand problems. A few interesting facts are stated below.
+                            <ul>
+                                <li>
+                                    An average typical American student in high school has about 13 outstanding credit
+                                    obligations
+                                </li>
+                                <li>
+                                    According to Employee Benefit Research Institute survey, only 14 percent of
+                                    American
+                                    workers
+                                    say that they are "very confident" that they will have enough money to live
+                                    comfortably
+                                    in
+                                    retirement and 30 percent of workers said they have less than $1,000 in savings and
+                                    investments
+                                </li>
+                                <li>
+                                    People who use a credit/debit cards to pay, they spend on average of about 50
+                                    percent
+                                    more
+                                    than when they pay with cash
+                                </li>
+
+                            </ul>
+
+
+
+                            <p> On the basis of above facts and figures and issues faced by people pertaining to their
+                                budgets,
+                                our team found out that It is essential that there exists a platform where a user can
+                                track
+                                and
+                                keep a check on his monthly expenditure and savings and hence our team decided to
+                                develop a
+                                n
+                                application which would not only help the user have a log of his transactions but also
+                                allow
+                                him to visualize his expenditure depending on which he can access each area of
+                                expenditure
+                                and
+                                decides where he needs to have a check and how to do it.</p>
+                            <br>
+                            <p><b>WHY IS THERE A NEED OF MONEY CONTROL?</b></p>
+                            <p>Money Control is an interesting topic to discuss upon. Different people have different
+                                reasons
+                                and different goals for which they save up money over a period of time. However, one
+                                common
+                                thing is that everyone needs money in this 21st centaury so that they can lead a
+                                comfortable
+                                and worry free life. Hence, it is important that people have some tools through which
+                                they
+                                can
+                                keep a track on their money. Also, People tend to spend more when they don’t have a
+                                proper
+                                visualization of the data. Many people find it confusing at the end of the month or the
+                                year
+                                when they try to calculate their expenditure or saving and tend to get frustrated and
+                                leave
+                                the
+                                task all together. Once this happens it is impossible for the user to analyze his area
+                                of
+                                surplus spending and evaluate the areas which provide him/her an option to save by cost
+                                cutting
+                                methods. Based on all these situations, there is dire need to keep in check our
+                                finances
+                                for a
+                                healthy budget.
+                                Based on the above statements, we have a vision of developing an app which would enable
+                                the
+                                users to maintain a healthy budget. Let the user know their areas of spending and let
+                                them
+                                visualize and analysis their data so that they can maintain a healthy budget.</p>
+
+                            <br>
+                            <p><b>TEAM ORGANIZATION</b></p>
+                            <ul>
+                                <li>
+                                    The team plans to meet on every Thursdays and Fridays from 15.00 to 17.00 hrs to
+                                    discuss on
+                                    matters officially.
+                                </li>
+                                <li>
+                                    Github will be used for uploading all the codes and documents.
+                                </li>
+                                <li>
+                                    All the unofficial communication will be carried out using Whatsapp.
+                                </li>
+                                <li>
+                                    Trello to assign and keep a track or all the tasks and User stories.
+                                </li>
+                            </ul>
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <br>
+
+
+
+                <button type="button" class="btn btn-info collapseSty textAlign" id="coljun04" data-toggle="collapse"
+                    data-target="#may13">13
+                    May 2019 -
+                    ISEE : Basic Prototype <span class="pull-right"><i class="fa fa-plus toggler" aria-hidden="true"></i></span></button>
+                <br>
+                <div id="may13" class="collapse">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p> Now that we are done with organizational issues such as team introduction and
+                                management we
+                                move on to the next topics which are Requirement and Specification.</p>
+                            <br>
+                            <p><b>REQUIREMENT ANALYSIS AND SPECIFICATIONS</b></p>
+                            <p>
+                                Requirement analysis for our application ‘Budget Book’ which aims at helping the user
+                                to
+                                manage
+                                his expenses was carried out in two steps.
+                                In the first step we approached the customer and by a thorough discussion we understood
+                                his
+                                requirements, expectations and the important basic features necessary for the
+                                application.
+                                Once
+                                the initial discussion was done, a discussion among the team members took place on how
+                                to
+                                arrive at the requirements of the user and if there are any additional features apart
+                                from
+                                that
+                                specified by the customer that would further enhance the application.
+                                The requirements gathered from the Customer were grouped under two categories. The
+                                first
+                                category consists of the features absolutely necessary for the basic foundation of the
+                                application. The features which would consist of the core idea implementation and the
+                                basic
+                                reason as to why the application was developed at the first place. The second category
+                                consists
+                                of features and implementations which would enhance the application and make it market
+                                ready or
+                                the features which if implemented would then promote the app to release in the play
+                                store
+                                In the second step of gathering requirements each team member thought as an independent
+                                user as
+                                to what features would be necessary in the above said application. Each team members
+                                came
+                                out
+                                with varied features some of which were essentials and others which would not be of
+                                more
+                                important to the actual users.</p>
+                            <br>
+                            <p><b>USER STORIES</b></p>
+                            All the requirements gathered from above two steps were formulated as user stories. The
+                            user
+                            stories are numbered according to the priority of the requirement. That is the stories at
+                            the
+                            top are the features which are of at most necessary and followed by features which would
+                            enhance the application as stated above. The user stories are as follows:
+                            <ul>
+                                <li>
+                                    As a user, I want to manage my expenses by using an application which would record
+                                    my
+                                    Income
+                                    and expenditure and help me analyze my budget.
+                                </li>
+                                <li>
+                                    As a user, I would like to have a Username and password so that nobody can have a
+                                    peek
+                                    at my
+                                    personal budget.
+                                </li>
+                                <li>
+                                    As a user, I would like to select the Month followed by year of the financial
+                                    details.
+                                </li>
+                                <li>
+                                    As a user, I would like to enter my Income only once and have an option of changing
+                                    it
+                                    as and
+                                    when required.
+                                </li>
+                                <li>
+                                    As a user, I should be able to enter my fixed expenses such as rent, loans,
+                                    electricity
+                                    bill,
+                                    insurance etc only once and would like to have a drop down menu for various
+                                    categories
+                                    and
+                                    include them in my budget every month.
+                                </li>
+                                <li>
+                                    As a user, I would like to have a feature where I could specify my unfixed expenses
+                                    in
+                                    the
+                                    various categories such as food, entertainment, and movies etc, state a comment on
+                                    the
+                                    transaction and state the mode of payment and have a limit for the same.
+                                </li>
+                                <li>
+                                    As a user, I would like to have a blank comment box in the unfixed section where I
+                                    can
+                                    enter
+                                    any category of unfixed expense which is not previously present.
+                                </li>
+                                <li>
+                                    As a user, I would like to have a numeric keypad instead of a QWERTY type where
+                                    ever I
+                                    enter
+                                    numeric values.
+                                </li>
+                                <li>
+                                    As a user I would like to have different sections for entering my Income and
+                                    expenses
+                                    so that
+                                    it is not confusing at the end of the day.
+                                </li>
+                                <li>
+                                    As a user, I would like to have a dashboard which consists of all the features of
+                                    the
+                                    application.
+                                </li>
+                                <li>
+                                    As a user, I would like to select the currency type.
+                                </li>
+                                <li>
+                                    As a user, I would like to have instructions to use the application.
+                                </li>
+                                <li>
+                                    As a user, I would like to have filters for my transactions where I could view my
+                                    budget for
+                                    particular criteria.
+                                </li>
+                                <li>
+                                    As a user, I would like to have visual representation of the data which make
+                                    analysis
+                                    easier.
+                                </li>
+
+                            </ul>
+                            <br>
+                            <p><b> WRONG ASSUMPTION IDENTIFICATION AND RESOLVING</b></p>
+                            <br>
+
+
+                            While gathering requirement analysis there were also certain areas where we went overboard
+                            with
+                            our assumptions which were quite unnecessary. The following are the assumptions which we
+                            made:
+                            <ul>
+                                <li>
+                                    We thought the app should take the email-id of the user to sign up for the
+                                    application
+                                    which
+                                    was then rendered redundant after discussion with the TA as the application doesn’t
+                                    require any
+                                    unique identification and since the app is a offline one.
+                                </li>
+                                <li>
+                                    Continuing with the above point, we thought that the application should be online
+                                    so
+                                    that the
+                                    user data can be stored in the central database and can be used to give user an
+                                    analysis by
+                                    comparing the data with national average and help user manage the budget. However,
+                                    after
+                                    discussion with the TA it was concluded that not many people are comfortable with
+                                    sharing their
+                                    personal budget information online and this would be a negative impact on the
+                                    application.
+                                </li>
+                                <li>
+                                    As discussed in the previous point, the team had thought of having a central
+                                    database
+                                    to
+                                    store data of all users. However, the implementation of the same was found to be
+                                    unnecessary
+                                    and at the same time expensive after discussion with TA.
+                                </li>
+
+                            </ul>
+                            <br>
+                            <p><b>WORK MANAGEMENT</b></p>
+
+
+                            <p> Trello was used to keep a track of user stories and to identify what work is to be done
+                                and
+                                in
+                                what precision order. The work was assigned to each individual either on trello or
+                                during
+                                personal meeting and a track of the same was kept in successive team meeting and
+                                Whatsapp
+                                messages.</p>
+                            <br>
+                            <p><b>WORKING PROTOTYPE</b></p>
+
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <img src="./images/ss1.jpeg" alt="Smiley face" width="250" />
+                                    <figcaption>User Dashboard</figcaption>
+
+                                </div>
+                                <div class="col-sm-4">
+                                    <img src="./images/ss2.jpeg" alt="Smiley face" width="250" />
+                                    <figcaption>Feeding Unfixed Expenditure</figcaption>
+
+                                </div>
+                                <div class="col-sm-4">
+                                    <img src="./images/ss3.jpeg" alt="Smiley face" width="250" />
+                                    <figcaption>Feeding Fixed expenditure</figcaption>
+
+                                </div>
+                            </div>
+                            <br>
+
+                            <p>The above screenshots are taken from the application which our team has developed.
+                                Screenshot 1 is of the dashboard which we get as soon as we login/sing up into the
+                                application.
+                                It consists of three options namely Add Unfixed Expenditure, Update Fixed Components,
+                                Update
+                                Unfixed Components, where the names are self explanatory.
+                                Screenshot 2 is the page obtained when we select Update Fixed components from the
+                                dashboard. It
+                                consists of two parts. In the first one we can enter our monthly income and update it.
+                                The
+                                second part consists of the Fixed Expenditure where we enter the expenses which are
+                                fixed
+                                for
+                                every month such as rent, electricity bill, and loans. We select the category from the
+                                drop
+                                down menu and enter the amount against it. We also have an option of deleting the
+                                particular
+                                expenses by selecting he cross mark as visible in the screenshot.
+                                Screenshot 3 is the view obtained when we select Update Unfixed Components from the
+                                dialogue
+                                box. It has various categories from which one can select the unfixed expenditure and
+                                enter
+                                the
+                                amount against it. It also has an option of entering the comment against a particular
+                                expenditure and also the mode of payment. Again, one can delete the expenditure by
+                                selecting
+                                the cross mark.</p>
+                            <br>
+                            <p><b>USE CASE DIAGRAM</b></p>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img src="./images/us1.png" />
+                                    <figcaption>Use case diagram for login & Dahboard</figcaption>
+                                </div>
+                                <br>
+                                <br>
+                                <div class="col-sm-12">
+                                    <img src="./images/us2.png" />
+                                    <figcaption>Use case diagram for fixed expenditure</figcaption>
+                                </div>
+
+                            </div>
+                            <br>
+                            <p><b>User Stories Dashboard</b></p>
+
+                            <div class="row">
+
+                                <div class="col-sm-9">
+                                    <img src="./images/dashboard.PNG" width="1000" />
+                                    <figcaption>Trello Dashboard for Sprint management</figcaption>
+
+                                </div>
+                            </div>
+                            <br>
+                            <p><b>Class Diagram</b></p>
+
+                            <div class="row">
+
+                                <div class="col-sm-9">
+                                    <img src="./images/classDiagram.png" width="1000" />
+                                    <figcaption>Class Diagram of the Application</figcaption>
+
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+
+                <button type="button" class="btn btn-info collapseSty textAlign" id="coljun04" data-toggle="collapse"
+                    data-target="#jun04">04
+                    Jun 2019 -
+                    ISEE : Advanced Prototype <span class="pull-right"><i class="fa fa-plus toggler" aria-hidden="true"></i></span></button>
+                <br>
+                <div id="jun04" class="collapse">
+                    <div class="row">
+                        <h4><b>Design Pattern</b></h4>
+                        <p>In software engineering, a design pattern is a general repeatable solution to a
+                            commonly
+                            occurring problem in software design. A design pattern isn't a finished design that
+                            can be
+                            transformed directly into code. It is a description or template for how to solve a
+                            problem that
+                            can be used in many different situations.
+                            We have used the following design patterns in our application.</p>
+                        <ul>
+                            <li><b>MVC – Model View Controller</b>
+                                <p>MVC Pattern stands for Model-View-Controller Pattern. This pattern is used to
+                                    separate
+                                    application's concerns.</p>
+                                <ul>
+                                    <li>Model - Model represents an object carrying data. It can also have
+                                        logic to update controller
+                                        if its data changes.</li>
+
+                                    <li>View - View represents the visualization of the data that model contains.</li>
+
+                                    <li>Controller - Controller acts on both model and view. It controls the data flow
+                                        into
+                                        model
+                                        object and updates the view whenever data changes. It keeps view and model
+                                        separate.</li>
+                                </ul>
+                            </li>
+
+                            <li><b>Interface</b></li>
+                            <p>
+                                It is a collection of abstract methods. A class implements an interface thereby
+                                inheriting the
+                                abstract methods of inheritance by which we can enforce the method usage.
+                            </p>
+                            <li><b>Serializable</b></li>
+                            <p>
+                                Converts objects or data into byte code and transfers it from one activity to another
+                                activity.
+                            </p>
+                            <li><b>Custom Pattern</b></li>
+                            <p>
+                                There was a repeatable task of creating table in each activity for displaying the
+                                components
+                                added by the user. The method of design pattern accepts the data list, module name,
+                                table
+                                layout and context. We have used a custom pattern of creating tables in the required
+                                activities.
+                            </p>
+
+                        </ul>
+                        <p>Given below shows two different activities which displays the table of contents</p>
+
+                        <br>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="./images/fxdTab.jpeg" width="250" alt="Card image">
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="./images/unfxd.jpeg" width="250" alt="Card image">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-ms-12">
+                            <h4><b>IMPLEMENTATION & UI</b></h4>
+                            <b>Coding Conventions</b>
+                            <ul>
+                                <li>
+                                    Variables names, method names, and class names follows CamelCase naming convention.
+                                </li>
+                                <li>
+                                    Comments are provided for each method.
+                                </li>
+                                <li>
+                                    Use try, catch for exception handling in method.
+                                </li>
+                                <li>
+                                    We have created getters and setters for our POJO’s (All the attributes are
+                                    maintained in a seperate class).
+                                </li>
+                                <li>
+                                    We are using PMD (Programming Mistakes Detector) plugin which helps us create
+                                    custom
+                                    rulesets enforce coding standards on the code implementation.
+                                </li>
+                            </ul>
+
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4><b>SPECIFIC CONTENT OF USE</b></h4>
+                            <b>Student</b>
+                            <p>
+                                A student is always tight on time and budget. Student, especially who stay abroad
+                                always
+                                have a constrain on expenditure since they have to juggle between a lot of things which
+                                vary from basic necessities such as Food, shelter, clothing, Internet to educational
+                                needs
+                                such as text books, stationeries and other extra expenditures. Hence, it is very
+                                necessary
+                                that a student always has a way to somehow keep a track of her/his budget, be informed
+                                if
+                                at all she/he is over his monthly allowance. A more traditional way is to write down
+                                all
+                                the expenses one has occurred over the month, sum it up and see if she/he is below his
+                                allowance or at least equal to it. However, this may be very robust at times. Also, one
+                                tends to forget a few expenses over the period and there is no way to match if she/he
+                                is
+                                over his budget except for of course her/his inner conscious which somehow always
+                                losses in
+                                front of one’s greed. Budget book is an application, which not only helps a student to
+                                keep
+                                a track of his expenditure over the time, but it also helps her/him to set monthly
+                                limits
+                                for various expenditure and ones he reaches a certain threshold she/he is alerted and
+                                by
+                                this way he can always keep a track. It also helps him visualize the expenses in a
+                                pictorial form and also as a downloadable summary which he can always analyze to cut
+                                down a
+                                few things and stay on budget.
+                            </p>
+                            <br>
+                            <b>A Working Individual</b>
+                            <br>
+                            <p>
+                                A working individual, be it a Doctor, an Engineer, an Architect, a Dancer, a Professor
+                                or
+                                in any other field is always a little busy to just keep a track of his incomes and
+                                expenditure. She/he may have various sources of income apart from their income from
+                                professional work. Sometimes, it just gets very frustrating to track the inflow and
+                                outflow
+                                of cash when you have so many incomes and a lot more expenditures especially when you
+                                have
+                                a family. Hence it is necessary that one can keep an eye on the inflow and outflow.
+                                Also,
+                                for a few individuals it’s annoying to go through numbers all the time, hence
+                                visualization
+                                also comes into picture. An Application which can not only help them keep a track of
+                                each
+                                sources of income and expenditure, along with the time stamp and the mode of
+                                expenditure is
+                                a very handy tool and that is what budget book is aimed at. An individual can enter his
+                                various sources of income, expenditure; methods of expenditure, monthly limits on
+                                unfixed
+                                expenditure and at the end of the month can visualize all the cash flow and analyze it.
+                            </p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4><b>STORY BOUND</b></h4>
+                            <b>1. Update Fixed Expenditure</b>
+
+                        </div>
+
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="./images/login.jpeg" alt="Smiley face" width="250" />
+                            <figcaption>Login Screen</figcaption>
+
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="./images/dashboard1.jpeg" alt="Smiley face" width="250" />
+                            <figcaption>Dashboard</figcaption>
+
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="./images/fixed_empty.jpeg" alt="Smiley face" width="250" />
+                            <figcaption>Empty screen of Fixed Expenditure without any values</figcaption>
+
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="./images/fxdTab.jpeg" alt="Smiley face" width="250" />
+                            <figcaption>3 entries in the list</figcaption>
+
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="./images/dashboard1.jpeg" alt="Smiley face" width="250" />
+                            <figcaption>Return to dashboard</figcaption>
+
+                        </div>
+
+                    </div>
+                    <br>
+                    <p>
+                        The above sequence represents how a user can add his fixed expenditure when he his using
+                        the application for the first time. The user Logs in for the first time by entering a pin.
+                        After he logs in, he sees a dashboard with three options namely “Add unfixed expenditure”,
+                        “Update fixed components”, “Update Unfixed Limits”. He selects update fixed components
+                        which prompts the user to a new screen which consists of various features as shown in the
+                        figure. The user then with the help of drop down menu adds all the fixed components which
+                        occur in his day to day life along with the amount and method of payment. All the entries
+                        are shown below which can be deleted any time with the help of delete icon. The user can
+                        also specify the payment frequency and the date of payment which helps him keep a track of
+                        all the variables. Once she/he is done updating the values he can navigate back to the
+                        dashboard. The sequence of operation is shown with the help of screenshots from the
+                        application.
+                    </p>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4><b>2. Add unfixed expenditure and Visualize in a graph.</b></h4>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="./images/login.jpeg" alt="Smiley face" width="250" />
+                            <figcaption>Login</figcaption>
+
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="./images/dashboard1.jpeg" alt="Smiley face" width="250" />
+                            <figcaption>Dashboard</figcaption>
+
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="./images/unfxd_empty.jpeg" alt="Smiley face" width="250" />
+                            <figcaption>Empty screen/screen with certain entries in unfixed expenditure</figcaption>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="./images/unfxd.jpeg" alt="Smiley face" width="250" />
+                            <figcaption>A new entry in the same screen</figcaption>
+
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="./images/dashboard1.jpeg" alt="Smiley face" width="250" />
+                            <figcaption>Return to dashboard</figcaption>
+
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="./images/unfxdgraph.jpeg" alt="Smiley face" width="250" />
+                            <figcaption>Visualize in the graph.</figcaption>
+
+                        </div>
+                    </div>
+                    <br>
+
+                    <p>
+                        The above screenshots represents the sequence of operation for visualizing the summary in a
+                        pictorial form. The example here used is of entering the unfixed component which is similar
+                        to the above example of fixed component. Once the entry has been made, the user returns to
+                        the dashboard and then selects the Visualize using the graph option where he can see a pie
+                        chart with all the values.
+                    </p>
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4><b>SUMMARY OF CHANGES</b></h4>
+
+                            <p>
+                                Since the basic prototype consisted of the entire necessary core features a few changes
+                                were made regarding the core idea. However, a lot of recommended changes from the
+                                client
+                                were taken into account and implemented which were initially not present in the basic
+                                prototype which are listed as follows:
+                            </p>
+                            <ul>
+                                <li>
+                                    In the basic prototype, the mode of payment was not specified, however it is a
+                                    necessary
+                                    feature to be implemented so that the user can keep a track if she/he has spent
+                                    using
+                                    card/cash/or any other source.
+                                </li>
+                                <li>
+                                    The option of adding Date and frequency of expenditure has been added which gives
+                                    the
+                                    user a hassle free experience of keeping the track on time stamp and also prevent
+                                    from
+                                    re-entering an Income/expenditure whatever the frequency might be.
+                                </li>
+                                <li>
+                                    Also, since the user can have multiple source of income we have provided the user
+                                    to
+                                    enter various income values which was not the case in the initial prototype.
+                                </li>
+                                <li>
+                                    Icons have been provided so that the application is User friendly and visually
+                                    appealing.
+                                </li>
+                                <li>
+                                    An option of visualizing the summary in a pictorial view has been provided.
+                                </li>
+
+                            </ul>
+
+                            <h4><b>SCREENSHOTS FROM APP OF ANY TWO PAGES:</b></h4>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <img src="./images/fxdTab.jpeg" alt="Smiley face" width="250" />
+                                    <figcaption>Fixed Components Activity</figcaption>
+
+                                </div>
+
+                            </div>
+                            <br>
+
+                            <p> The above screenshot shows an overview of the fixed expenditure page. The page requires
+                                a
+                                certain mandatory fields. The next part is the most important part which prompts us to
+                                enter the income of the user. Once the income has been updated, the user can then enter
+                                fixed expenditure from the drop down list or the user can define her/his own category
+                                and
+                                specify the corresponding amount. Once he has entered the amount, the user can set the
+                                payment frequency which will also be helpful in reflecting in the summary and the user
+                                can
+                                also specify payment method so that he can keep a track whether she/he has paid by cash
+                                or
+                                by card or nay other means. Next he can also enter the date of payment which helps the
+                                user
+                                to keep a time log of his expenditure and finally all the entries appear as a list
+                                below.</p>
+                            <br>
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <img src="./images/fxdTab.jpeg" alt="Smiley face" width="250" />
+                                    <figcaption>Unfixed Expenditure limit</figcaption>
+
+                                </div>
+
+                            </div>
+                            <br>
+                            <p>
+                                The above screenshot is of the page where you can set limits for your unfixed
+                                expenditure.
+                                Once the limits are fixed, the application gives a notification whenever the threshold
+                                value is reached. The page consists of a drop down menu which consists of a few unfixed
+                                categories or the user can define it according to her/his needs and enter the
+                                corresponding
+                                limiting amount she/he wants to have for each particular category. Once these have been
+                                added, they appear as a list below with a delete icon which can be updated whenever
+                                required.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <button type="button" class="btn btn-info collapseSty textAlign" id="coljun04" data-toggle="collapse"
+                    data-target="#jun24">24
+                    Jun 2019 -
+                    ISEE : Beta Prototype & Software Testing<span class="pull-right"><i class="fa fa-plus toggler"
+                            aria-hidden="true"></i></span></button>
+                <br>
+                <div id="jun24" class="collapse">
+                    <div class="row">
+                        <br>
+                        <h4><b>Software Testing</b></h4>
+                        <br>
+
+                        <p>As the Beta prototype is now ready its time to test our application regressively and get to
+                            know the critical, major and minor errors before the end user uses it and makes fun of it
+                            or provides negative feedback on the social media. In order to test the App and also to
+                            improve the performance & responsiveness of the app we applied the methods of both White
+                            Box and Black box testing in our App. </p>
+                        <h4><b>White Box Testing</b></h4>
+
+                        <p>White box testing methods are applied when the internal working or structure of the code is
+                            known. It is mostly performed by the Developer to know the critical bugs, redundat code, to
+                            test the actual scenario for which the is intented to do.</p>
+
+                        <p>With the help of White box testing we can get to know the code coverage which include the
+                            following:
+                        </p>
+                        <div class="col-sm-12">
+                            <ul>
+                                <li>
+                                    Class Coverage
+                                </li>
+                                <li>
+                                    Method Coverage
+                                </li>
+                                <li>
+                                    Line Coverage
+                                </li>
+                                <li>
+                                    Statement Coverage
+                                </li>
+
+                            </ul>
+                        </div>
+
+
+                        <h4>Application of White Box Testing approach on Budget Book</h4>
+
+
+
+
+
+
+                        <div class="col-sm-12">
+                            <ul>
+                                <li>
+                                    In order to test the internal structure of our application we used jUnit4 along
+                                    with robolectric framework.
+                                </li>
+                                <li>
+                                    Robolectric framework was used so that we can mock the application context without
+                                    running the actual application.
+                                </li>
+
+
+                            </ul>
+                        </div>
+                        <p>The following are the classes & methods that were tested:</p>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <img src="./images/tested.png" width="750" alt="Card image">
+                                <figcaption class="text-center">Classes & Methods Tested in the Application</figcaption>
+                                <br>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-12">
+                            <p>There were certain reasons for selecting particular methods to Test and some had some
+                                implication because of which we couldn't test those methods</p>
+                            <p>The below tables clearly explain the reasoning:</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <img src="./images/testedReason.png" width="750" alt="Card image">
+                                <figcaption class="text-center">Reasoning for Methods: Tested</figcaption>
+                                <br>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <img src="./images/unTestedReason.png" width="750" alt="Card image">
+                                <figcaption class="text-center">Reasoning for Methods: Un-Tested</figcaption>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h4>Coverage Report</h4>
+                                <p>IntelliJ Test runner suite provided in Android Studio was used generate coverage
+                                    Report</p>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <img src="./images/Capture.PNG" width="750" alt="Card image">
+                                <figcaption class="text-center">Application Coverage Report</figcaption>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h4>Black Box Testing</h4>
+
+                                <p>It is a type of software testing method in which the internal structure/ design/
+                                    implementation of the item being tested is NOT known to the tester.</p>
+
+                                <p> Type of Black Box testing:</p>
+                                <ul>
+                                    <li>
+                                        Equivalence Partitioning.
+                                    </li>
+                                    <li>
+                                        Boundary value Analysis.
+                                    </li>
+                                    <li>
+                                        Decision table.
+                                    </li>
+                                    <li>
+                                        State transition
+                                    </li>
+                                    <li>
+                                        Exploratory testing
+                                    </li>
+                                    <li>
+                                        Error guessing.
+                                    </li>
+                                </ul>
+
+
+                                <h4>Equivalence Class Partitioning:</h4>
+                                <p>
+                                    In this we divide test conditions in groups. From each group we test only one
+                                    condition. If a condition from a group work then all the conditions from that group
+                                    work</p>
+                                <p>In our Application we have identified the following as the groups:</p>
+                                <ol>
+                                    <li>Amount fields:
+
+                                        <p>
+                                            Splitting the test conditions as: Entering numeric value, entering
+                                            alphanumeric,
+                                            entering alphabets, entering -ve values, entering decimal values.
+                                        </p>
+                                    </li>
+                                    <li>Date fields manual entry:
+
+                                        <p>
+                                            Splitting the test conditions as: Entering dd-mm-yyyy, entering
+                                            alphanumeric, entering
+                                            alphabets, entering special characters, Entering different format
+                                            combinations
+                                            (MM-dd-yyyy | yyyy-dd-MM...)
+                                        </p>
+                                    </li>
+                                </ol>
+
+                                <h4>Boundary Value Analysis:</h4>
+                                <p>
+                                    In our application we identified the following under the Boundary value analysis.</p>
+
+                                <ol>
+                                    <li>Amount fields :
+
+                                        <p>
+                                            valid: >0 & maxlength 12 invalid <=0 2. valid </p> </li> <li>Date fields :
+
+                                                <p>
+                                                    valid
+                                                    calendar date (Ex: leap year), invalid: Invalid calendar date (ex:
+                                                    31-04-2019)
+                                                </p>
+                                    </li>
+
+                                </ol>
+
+                                <h4>Decision Table:</h4>
+
+
+                                <p>This test is appropriate for functionalities which has logical relationships between
+                                    inputs i.e; if else condition.
+                                    Using this technique we deal with combination of inputs.
+                                </p>
+
+                                <h4>State Transition:</h4>
+                                <p>Using state transition we pick test cases from an application where we need to test
+                                    different system transitions. We can apply this when an application gives a
+                                    different output for the same input depending on what has changed in the earlier
+                                    state.</p>
+
+                                <h4>Exploratory testing:</h4>
+                                <p>We performed this testing to explore all the functionalities and detect any serious
+                                    issues. </p>
+
+
+                                <h4>Error guessing:</h4>
+                                <p>We performed this testing along with equivalence partitioning and boundary value
+                                    analysis. Mostly form submission were testing where we already expected the desired
+                                    results.</p>
+
+
+
+
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <img src="./images/blackBoxTab.png" width="750" alt="Card image">
+                                <figcaption class="text-center">Overview of BlackBox testing</figcaption>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h4>Black Box Testing on Budget Book </h4>
+                                <p>
+
+                                    In our application testing we tried to cover as many types of testing as possible
+                                    in the below mentioned user stories.
+
+                                </p>
+                                <h4>User Stories</h4>
+                                <ol>
+                                    <div class="row">
+                                        <div class="col-sm-12 text-center">
+                                            <img src="./images/createPin1.gif" width="200" alt="Card image">
+                                            <figcaption class="text-center">Exploratory testing on Enter PIN</figcaption>
+                                        </div>
+                                    </div>
+                                    <li>
+
+                                        <i>As a user I want to create a PIN for the application and also login using
+                                            correct pin.</i>
+                                        <p>
+                                            In this user story we verify if the user is able to insert a 4 digit PIN in
+                                            the input field and log into the application.
+                                            On opening the application the first activity for new user is creating PIN
+                                            for the application to secure the information in the application. Upon
+                                            creating the PIN the user should be navigated to the income activity. We
+                                            have tested this scenario by creating PIN as a new user and provided income
+                                            details in the income field and date field.
+                                            This pin only accepts numeric vales and alphabets, alphanumeric special
+                                            characters are not accepted. We have tested this user story as a part of
+                                            exploratory testing by providing incorrect pin, providing no pin and
+                                            providing correct pin comparing the results with the expected results.
+
+                                        </p>
+                                    </li>
+                                    <div class="row">
+                                        <div class="col-sm-12 text-center">
+                                            <img src="./images/inc_test.gif" width="200" alt="Card image">
+                                            <figcaption class="text-center">Equivalence Testing on income field</figcaption>
+                                        </div>
+                                    </div>
+                                    <li>
+                                        <i>As a user I want to add my monthly income.</i>
+                                        <p>In this user story we have tested income activity of the application for the
+                                            income field and date field which are mandatory in the income activity. We
+                                            have tested the fields by not providing mandatory information and see how
+                                            the application is behaving also by providing incorrect information in the
+                                            date field and income field.
+                                            In the income field we tested for boundary value analysis by providing the
+                                            maximum number of income that is 13 digits as it is not accepted beyond 13
+                                            digits also null value is not accepted as it throws an error. For
+                                            equivalence class partitioning in income field we have tested by providing
+                                            zero value, negative value and positive value and compared the results with
+                                            the expected results to check the testing
+                                            In the date field we have performed equivalence partitioning by providing
+                                            the valid date, invalid date and special characters in the date field. By
+                                            providing the dates that exist and dates that don’t exist we have performed
+                                            boundary value analysis testing for this user story.
+                                        </p>
+                                    </li>
+                                    <div class="row">
+                                        <div class="col-sm-12 text-center">
+                                            <img src="./images/unfxdFlow.gif" width="200" alt="Card image">
+                                            <figcaption class="text-center">Equivalence & Exploratory testing on Amount & Date field</figcaption>
+                                        </div>
+                                    </div>
+                                    <li>
+                                        <i>As a user I want to add my unfixed expenditure</i>
+                                        <p>In this user story we have tested what happens when mandatory fields are not
+                                            provided as a part of exploratory testing. We have provided with all types
+                                            of inputs available and checked how the inputs affect the output of the
+                                            activity.
+                                            In the expenditure field we have tested with providing the positive values,
+                                            zero and negative values as a part of equivalence partitioning test. For
+                                            positive flow test we have provided with positive values of expenditure and
+                                            for negative flow test we have provided zero and negative values.
+                                            And as part of exploratory testing we have explored the fields of comment
+                                            and payment method. Comment field accepts numeric values, alphabets,
+                                            alphanumeric and special characters. Payment method accepts the methods
+                                            that are provided in the dropdown.
+                                        </p>
+                                    </li>
+                                    <div class="row">
+                                        <div class="col-sm-12 text-center">
+                                            <img src="./images/visualflow.gif" width="200" alt="Card image">
+                                            <figcaption class="text-center">Exploratory testing on Visualize feature</figcaption>
+                                        </div>
+                                    </div>
+                                    <li>
+                                        <i>As a user I want to visualize Expenditure</i>
+                                        <p>This user story is majorly focused on exploratory testing as from date and
+                                            to date field is already tested in the income activity as part of
+                                            equivalence partitioning testing and boundary value analysis. So in this
+                                            activity we have explored all the inputs available in the filtering section
+                                            and checked the outputs. We have used different timeframes available, the
+                                            frequency of expenses, and the method of payment as inputs in the filtering
+                                            activity to attain desirable outputs.</p>
+                                    </li>
+                                    <div class="row">
+                                        <div class="col-sm-12 text-center">
+                                            <img src="./images/reset.gif" width="200" alt="Card image">
+                                            <figcaption class="text-center">Error guessing on RESET PIN</figcaption>
+                                        </div>
+                                    </div>
+                                    <li>
+                                        <i>As a user I want to reset my pin.</i>
+                                        <p>This user story is focused on changing the PIN set by the user to a new PIN.
+                                            In this activity we have used the testing methods of error guessing testing
+                                            and exploratory testing.
+                                            By providing inputs we are trying to guess the output of the activity such
+                                            as by providing wrong pin in the reset activity and trying to guess the
+                                            error that will be displayed on the screen, providing the same pin for both
+                                            the old and new pin and guessing the error and providing the correct inputs
+                                            and checking whether the pin is changed message is displayed or not.
+                                            Also as a part of exploratory testing we are checking what happens to the
+                                            output when different inputs are provided such as wrong old pin, providing
+                                            same pin for both the old and new pin, providing correct old pin and
+                                            resetting the new pin, also with no inputs in the old pin field and vice
+                                            versa.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h4>Documentation of Test cases</h4>
+                                <p>An excel sheet on google forms was created and shared across all the members of teh
+                                    team so that every member can can access and update the sheet. Each member was
+                                    assigned a specific User story, we used to think about all the possible test
+                                    scenarios and test it in the actual application and update the sheet accordingly</p>
+
+                                <p>Below is a screen shot & the link of the sheet :</p>
+                                <a href="https://docs.google.com/spreadsheets/d/1S18f-Nsl47Ke-88xqspupfx4_ti5RmzhGs8sM88mGxQ/edit?usp=sharing">Access
+                                    the Matrix here</a>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <img src="./images/matrix.PNG" width="750" alt="Card image">
+                                        <figcaption class="text-center">Traceability matrix</figcaption>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h4>Effort Spent on Testing</h4>
+                                <p>A task was assigned to every team member based on their user story in Trello so as
+                                    to track the effort spent on testing.</p>
+
+                                <p>Every member had to identify the different test scenarios possible, group them
+                                    record it in the Traceability matrix and update the effort in the Trello against
+                                    their task.</p>
+
+                                <p>Below is a screen shot :</p>
+
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <img src="./images/trello1.PNG" width="750" alt="Card image">
+                                        <figcaption class="text-center">Effort monitoring in Trello</figcaption>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h4>Summary of Changes</h4>
+                                <p>There has been numerous changes post our advanced prototype. Mostly the changes
+                                    comprises of some new features, user experience and performance enhancements </p>
+
+
+
+                                <p>Below is the summary of the changes:</p>
+
+
+                                <ul>
+                                    <li>
+                                        Implemented Notification feature to alert the user on spending 75% or more than
+                                        the set limit for the component
+
+                                    </li>
+                                    <li>
+                                        PDF download feature was added so that user can download it for the current
+                                        month as well as the selected period.
+
+                                    </li>
+                                    <li>
+                                        PDF sharing feature was added so that user can share the PDF on different media
+                                        houses (i.e Whatsapp, messenger, gmail etc..)
+
+                                    </li>
+                                    <li>
+                                        PIN reset is provided so that user can reset the PIN as feasible.
+
+                                    </li>
+                                    <li>
+                                        Exit option was implemented to stop the application from running in the
+                                        background which avoids Android’s performance quotient.
+
+                                    </li>
+                                    <li>
+                                        Dashboard was improvised for better user experience
+
+                                    </li>
+                                </ul>
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <img src="./images/dashboard1.jpeg" width="250" alt="Card image">
+                                <figcaption class="text-center">Old Dashboard</figcaption>
+                            </div>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <div class="col-sm-5">
+                                <img src="./images/newDashboard.jpeg" width="250" alt="Card image">
+                                <figcaption class="text-center">New Dashboard</figcaption>
+                            </div>
+                            <br>
+                            <div class="col-sm-5">
+                                <img src="./images/newFeature.jpeg" width="250" alt="Card image">
+                                <figcaption class="text-center">New Features on Dashboard</figcaption>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div id="about">
                 <div class="row">
                     <div class="col-sm-3">
-                        <div class="card" >
-                            <img class="card-img-top" src="boy.png" alt="Card image">
+                        <div class="card">
+                            <img class="card-img-top" src="./images/Aftab.jpeg" alt="Card image">
                             <div class="card-body">
                                 <h4 class="card-title">Altaf Mohammed Aftab</h4>
                                 <p class="card-text">Developer</p>
-                                <a href="#" class="btn btn-primary">See Profile</a>
+                                <a onclick="show_prof('aft')" class="btn btn-primary">See Profile</a>
+
+                                <div class="row" id="aft_prof">
+                                    <div class="col-sm-12">
+                                        <br>
+                                        <p>
+                                            <b> Former Technology Analyst at Infosys.</b>
+                                            <ul>
+                                                <li>
+                                                    3.5 years experienced in web Application
+                                                    development.
+                                                </li>
+                                                <li>
+                                                    Worked as a full stack and a mean stack
+                                                    developer.
+                                                </li>
+                                                <li>
+                                                    Technologies:
+                                                    HTML5, CSS3, bootstrap, JavaScript, Jquery,
+                                                    Typescript, Angular6,
+                                                    AngularJs, NodeJS, MySql, spring JAVA, MongoDB.
+                                                </li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3">
-                        <div class="card" >
-                            <img class="card-img-top" src="boy.png" alt="Card image">
-                            <div class="card-body">
-                                <h4 class="card-title">Khaleel ur Rahman</h4>
-                                <p class="card-text">Developer</p>
-                                <a href="#" class="btn btn-primary">See Profile</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="card" >
-                            <img class="card-img-top" src="boy.png" alt="Card image">
-                            <div class="card-body">
-                                <h4 class="card-title">Manish</h4>
-                                <p class="card-text">Developer</p>
-                                <a href="#" class="btn btn-primary">See Profile</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="card" >
-                            <img class="card-img-top" src="girl.png" alt="Card image">
-                            <div class="card-body">
-                                <h4 class="card-title">Sini</h4>
-                                <p class="card-text">Developer</p>
-                                <a href="#" class="btn btn-primary">See Profile</a>
-                            </div>
-                        </div>
-                    </div>
+               
                 </div>
 
 
